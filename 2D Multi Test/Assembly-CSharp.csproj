@@ -54,6 +54,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets/Movement.cs" />
+    <Compile Include="Assets/Collected.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

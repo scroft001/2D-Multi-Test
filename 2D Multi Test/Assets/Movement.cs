@@ -25,10 +25,9 @@ public class Movement : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D col)
     {
-        Debug.Log("Hit " + collision.collider.name);
-        if (collision.collider.CompareTag("Collectible"))
+        if (col.CompareTag("Collectible"))
         {
             score++;
             scoreText.text = "Score: " + score;
